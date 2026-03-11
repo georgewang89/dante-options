@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dante Labs | Beyond Testing - The Answer is in Your DNA</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter for modern, premium sans-serif look -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandOffWhite: '#F9F7F2',
+            brandCharcoal: '#1A1A1A',
+            brandMoss: '#4A5D4E',
+            brandClay: '#8C7365',
+            brandNavy: '#0F172A',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F9F7F2;
+      color: #1A1A1A;
+      -webkit-font-smoothing: antialiased;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+<style data-purpose="layout-utilities">
+    .section-padding {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    @media (min-width: 1024px) {
+      .section-padding {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+    }
+    .hero-gradient {
+      background: linear-gradient(to right, rgba(26, 26, 26, 0.6), transparent);
+    }
+  </style>
+</head>
+<body>
+<!-- BEGIN: Navigation -->
+<nav class="sticky top-0 z-50 bg-brandOffWhite/90 backdrop-blur-md border-b border-brandCharcoal/5">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-bold tracking-tighter text-brandCharcoal" href="#">DANTE LABS</a>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-brandCharcoal/70">
+<a class="hover:text-brandCharcoal transition-colors" href="#">Genome Sequencing</a>
+<a class="hover:text-brandCharcoal transition-colors" href="#">Clinical Services</a>
+<a class="hover:text-brandCharcoal transition-colors" href="#">Our Science</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-sm font-semibold text-brandCharcoal px-4 py-2" href="#">Log In</a>
+<a class="bg-brandCharcoal text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-brandMoss transition-all" href="#">Order Kit</a>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="relative h-[90vh] min-h-[700px] overflow-hidden flex items-center">
+<!-- Background Image -->
+<div class="absolute inset-0">
+<img alt="Thoughtful adult couple in natural light" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx1WCYAKJrgSx-XemlUpJ5pwAoLmT3gHUk0nUKu0ZK4dw6YVZ4zWyuudzos9fxTzCKIupiQucFfEAnVKR1tfpfzoWAzbyoy4VCLqfTWHbOWQ2snIlU4PNnX7vDKty765Q-IGj91v_xLNhjr3Wzb4n4ziVOg6Hg08aMAR7CEpVW39MLPNXe9ZW9HRjIeBjtHepKZ2R40Ec99lcqmvQ8dvNtlp1-Twrwpi3g1z6LhQWw2RMBESF3JVs1nl-mHnkA4FUeRQLnL92njII"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl text-white">
+<span class="inline-block text-xs font-bold tracking-[0.3em] uppercase mb-4 opacity-80">Beyond Testing</span>
+<h1 class="text-6xl md:text-8xl font-light tracking-tight mb-8 leading-[1.1]">
+            The answer was <br/><span class="font-normal italic">always</span> in your DNA.
+          </h1>
+<p class="text-xl md:text-2xl font-light opacity-90 mb-10 leading-relaxed text-balance">
+            Until now, the most important information about your health has been sitting in your DNA — unread. Dante Labs sequences your entire genome and turns what it finds into answers you can act on.
+          </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white text-brandCharcoal px-10 py-5 rounded-full font-semibold text-lg hover:bg-brandOffWhite transition-colors" href="#">Explore Whole Genome</a>
+<a class="border border-white/30 backdrop-blur-sm text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white/10 transition-colors" href="#">View Clinical Use Cases</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Logo Strip -->
+<section class="bg-brandOffWhite border-b border-brandCharcoal/5 py-12">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-[10px] font-bold tracking-[0.2em] uppercase text-brandCharcoal/40 mb-10">As Seen &amp; Trusted In</p>
+<div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 opacity-50 grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-bold tracking-tighter">CNN</span>
+<span class="text-xl font-bold tracking-tighter">CNBC</span>
+<span class="text-xl font-bold tracking-tighter">FT</span>
+<span class="text-xl font-bold tracking-tighter">NVIDIA</span>
+<span class="text-xl font-bold tracking-tighter">AWS</span>
+<span class="text-xl font-bold tracking-tighter">Nature</span>
+<span class="text-xl font-bold tracking-tighter">ASHG</span>
+<span class="text-xl font-bold tracking-tighter">HIMSS</span>
+</div>
+</div>
+</section>
+<!-- END: Logo Strip -->
+<!-- BEGIN: Who We Help -->
+<section class="section-padding bg-brandOffWhite">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl md:text-5xl font-light tracking-tight text-brandCharcoal">Medical answers for those who need them most.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img alt="Hereditary Risk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXpw13hR0kygVZSMsGm83JIuvrATcAKk3b1OCM-oHywBMv2fgxogxSe3N9ykoFEP3cS7aG-Xm50huE9WY6Ac7JKYAZ6qCVbpcwW0DLnBYaaXmQ6bVuCIrNc_ad5iOc82_rPMFGBvbCOPFDMq7vffvtqjqG7L05SjtNo-jHFElB47mlhViz1CoS91vr7OHrd86TvcD6mtjxnngZT_7Ipr6KE6VZeFSqxTcFxhmRp_hvM4YyxDuM9IzVixOzGEfM7nH-8NSEGKvVuAk"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-semibold mb-3">Hereditary Risk</h3>
+<p class="text-brandCharcoal/70 text-sm leading-relaxed mb-6">Proactive screening for cancer and cardiovascular risks inherited from family.</p>
+<a class="text-brandMoss font-bold text-xs uppercase tracking-widest flex items-center gap-2" href="#">Learn More <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img alt="Unexplained Symptoms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8i73mwjssi5ZjDeLriXdRpBM5jAjf5I2pFflIaU5Qy5fEL_ZHAF29ai_u8nVTPsKgACZIVEsiJmW9LHIQot8RKAbJEHKJ-G7eAvPlota72n5KvxdAFcATDJ6rsOA5dTpR9rdoZTY0QgIEqqCZ_Z24NGbetUC5duhn464mY288KKysptCtTpcV8xIsWNJ_ZcGd5tv5nzv43NlIW0iASWniKN42_2jpcxD4MT588gGt23G1QL-Ks8tZk4hzLJKr4T8N1QsNoQfBhw4"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-semibold mb-3">Unexplained Symptoms</h3>
+<p class="text-brandCharcoal/70 text-sm leading-relaxed mb-6">Diagnostic odyssey support for patients with rare or undiagnosed conditions.</p>
+<a class="text-brandMoss font-bold text-xs uppercase tracking-widest flex items-center gap-2" href="#">Learn More <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img alt="Treatment Effectiveness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzFyLQwJz2fU7B8BcUCuceAfsBD1Zggl7qrWQTErY0r90w99L6e4VyCLvJ_QdJ7Bwpk9c3Kuojd3ik3_C0l445gCSl8A9pyanpFFW4yeygE-DhuKIs01mX_MXqkdyyosEu62dqU82Km-NRF4BUxx8G2CFWPTst1cBI4AHL8j6Fsdwajd8bLS4sQ7RrnfujWTN9LvKe8eAmL1m_S-rQ3Jkt9ldKrFEYElqVW_ej9Y7OnDzqcTk8IimjClOZPV1Szmmo3YcAAXXxadA"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-semibold mb-3">Treatment Not Working</h3>
+<p class="text-brandCharcoal/70 text-sm leading-relaxed mb-6">Pharmacogenomics to identify which medications will actually work for you.</p>
+<a class="text-brandMoss font-bold text-xs uppercase tracking-widest flex items-center gap-2" href="#">Learn More <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img alt="Previous Testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCNTcovdwv4p6RuP7BrXdGO6oqLCBGW0mrtUiurpC8M5JnYQEXecxnq2dLxj0BY5kJR1gVw0LbHQDecwaOyuSAdt7UeoKzmP7ftszPDnhpiQvO4muo4CcTrUaG39higoaMqi0LwtuSiGf9UV1koSdoY90vCjbX1jqeIIeik3L3OtQfRJa0F5aeEJMOrf0RocneokwC7_rY6wHkIB8Ax06AJVd3yai3gfew9A-1Sj_CR9MPs__QHS8-fn4xjLbOtVxK4tLjYxYGldg"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-semibold mb-3">Already Tested</h3>
+<p class="text-brandCharcoal/70 text-sm leading-relaxed mb-6">Upload raw data or re-sequence for deeper analysis than standard consumer tests.</p>
+<a class="text-brandMoss font-bold text-xs uppercase tracking-widest flex items-center gap-2" href="#">Learn More <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Who We Help -->
+<!-- BEGIN: Proof Band -->
+<section class="bg-brandNavy text-white section-padding overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-4xl md:text-5xl font-light leading-tight mb-12">Dante results are used by doctors worldwide for complex and everyday medical cases.</h2>
+<div class="grid grid-cols-2 gap-10">
+<div>
+<p class="text-4xl font-bold mb-2">30X</p>
+<p class="text-white/60 text-sm tracking-wide uppercase font-medium">Standard Clinical Depth</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">5M+</p>
+<p class="text-white/60 text-sm tracking-wide uppercase font-medium">Variants Analyzed</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">200+</p>
+<p class="text-white/60 text-sm tracking-wide uppercase font-medium">Health Reports</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">99.98%</p>
+<p class="text-white/60 text-sm tracking-wide uppercase font-medium">Sequence Accuracy</p>
+</div>
+</div>
+</div>
+<div class="bg-white/5 border border-white/10 p-12 rounded-3xl backdrop-blur-sm">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 bg-brandMoss rounded-full flex-shrink-0 flex items-center justify-center font-bold text-lg">!</div>
+<div>
+<h4 class="text-xl font-semibold mb-4">Precision Diagnostic Case Study</h4>
+<p class="text-white/80 leading-relaxed italic mb-6">
+                  "After years of searching for a diagnosis for her son, the Dante Labs Whole Genome Report identified a specific mutation in the PTPN11 gene associated with Noonan Syndrome, changing his entire clinical management plan."
+                </p>
+<div class="h-px bg-white/20 mb-6"></div>
+<p class="text-sm font-bold tracking-widest uppercase text-white/40">Clinical Significance: High</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute right-0 bottom-0 translate-y-1/2 translate-x-1/2 w-96 h-96 bg-brandMoss/20 blur-[120px] rounded-full"></div>
+</section>
+<!-- END: Proof Band -->
+<!-- BEGIN: How It Works -->
+<section class="section-padding bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">What sequencing your entire genome actually means.</h2>
+<p class="text-brandCharcoal/60 text-lg">We don't just look at common snippets. We read every single one of your 3 billion base pairs of DNA.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-16 relative">
+<!-- Connective Line (Desktop Only) -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-px bg-brandCharcoal/5 z-0"></div>
+<div class="relative z-10 text-center">
+<div class="w-24 h-24 bg-brandOffWhite rounded-full flex items-center justify-center mx-auto mb-8 border border-brandCharcoal/5">
+<svg class="w-8 h-8 text-brandCharcoal" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="text-xl font-semibold mb-4">1. Non-Invasive Collection</h3>
+<p class="text-brandCharcoal/60 leading-relaxed">A simple saliva sample collected at home using our medical-grade kit, shipped back to our European labs.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-24 h-24 bg-brandOffWhite rounded-full flex items-center justify-center mx-auto mb-8 border border-brandCharcoal/5">
+<svg class="w-8 h-8 text-brandCharcoal" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.628.285a2 2 0 01-1.563 0l-.628-.285a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547V19a2 2 0 002 2h12a2 2 0 002-2v-3.572zM12 11V3m0 0L9 6m3-3l3 3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="text-xl font-semibold mb-4">2. Proprietary Sequencing</h3>
+<p class="text-brandCharcoal/60 leading-relaxed">Our clinical lab uses Illumina's most advanced technology to sequence your entire genome 30 times over for extreme precision.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-24 h-24 bg-brandOffWhite rounded-full flex items-center justify-center mx-auto mb-8 border border-brandCharcoal/5">
+<svg class="w-8 h-8 text-brandCharcoal" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="text-xl font-semibold mb-4">3. Actionable Insights</h3>
+<p class="text-brandCharcoal/60 leading-relaxed">You receive a digital dashboard with clinical reports that you can share with your doctor to personalize your health plan.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: How It Works -->
+<!-- BEGIN: Clinical Proof Case Study -->
+<section class="section-padding bg-brandMoss text-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2">
+<img alt="Thomas from Scotland" class="rounded-[2.5rem] shadow-2xl grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMvxZ0MtqZ5ItSOrPavjSZWQ3D-Vbeqld13IhcotiukAf80Wdrdl_ByWzZbfgEB-jcgACuDMl-xxIfHGd0wkSio2TeC8Jjyp_YneMrjsja36xBChWBCRe9o3vx3JRTh7bRfh60ofavb02zx1kLqDML5F93vTfHG1ZYdIDOznFFmSlTj9ExJf7Ir3hcIW3fmJtuCJsLb0lTVyOQfLoGCG5-hAXGtsO829W8r0KyGYUv5GT-aqsBL5utf11XLx6CBvrF2u4y4ALVj8w"/>
+</div>
+<div class="lg:w-1/2">
+<span class="inline-block text-xs font-bold tracking-[0.3em] uppercase mb-8 border-b-2 border-white/20 pb-2">Real Impact</span>
+<blockquote class="text-4xl md:text-5xl font-light italic leading-tight mb-12">
+              "They never added the numbers up until now when they saw the Dante Labs report."
+            </blockquote>
+<p class="text-xl opacity-80 mb-4">— Thomas, Scotland</p>
+<p class="text-sm uppercase tracking-widest font-bold opacity-50 mb-10">Undiagnosed for 40 years before Dante.</p>
+<a class="inline-flex items-center gap-4 text-white font-bold group" href="#">
+<span class="w-16 h-16 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-brandMoss transition-all">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+              Watch Thomas's Story
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Clinical Proof -->
+<!-- BEGIN: CTA Block / Product -->
+<section class="section-padding bg-brandOffWhite">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-white border border-brandCharcoal/5 rounded-[3rem] overflow-hidden flex flex-col md:flex-row shadow-2xl">
+<div class="md:w-1/2 bg-brandCharcoal p-12 lg:p-20 flex items-center justify-center">
+<!-- Representing the premium kit box -->
+<div class="relative w-full max-w-md aspect-square bg-gradient-to-tr from-brandCharcoal to-zinc-800 rounded-lg shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] flex items-center justify-center p-12 transform -rotate-3 hover:rotate-0 transition-transform duration-700">
+<div class="text-center">
+<p class="text-white text-3xl font-bold tracking-tighter mb-2">DANTE</p>
+<p class="text-white/40 text-[10px] uppercase tracking-[0.4em] mb-8">Whole Genome Kit</p>
+<div class="h-px bg-white/10 w-32 mx-auto"></div>
+</div>
+<div class="absolute bottom-6 right-6 text-white/10 text-6xl font-bold">WGS</div>
+</div>
+</div>
+<div class="md:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
+<h2 class="text-4xl md:text-5xl font-light tracking-tight mb-8">One test. The complete genetic picture. For life.</h2>
+<div class="space-y-6 mb-12">
+<div class="flex items-start gap-4">
+<svg class="w-6 h-6 text-brandMoss flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<p class="text-brandCharcoal/70">Whole Genome Sequencing (30X Coverage)</p>
+</div>
+<div class="flex items-start gap-4">
+<svg class="w-6 h-6 text-brandMoss flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<p class="text-brandCharcoal/70">Full Pharmacogenomics Analysis</p>
+</div>
+<div class="flex items-start gap-4">
+<svg class="w-6 h-6 text-brandMoss flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<p class="text-brandCharcoal/70">Lifetime DNA Re-analysis Updates</p>
+</div>
+</div>
+<div class="bg-brandOffWhite p-8 rounded-2xl mb-10 border border-brandCharcoal/5">
+<div class="flex items-center justify-between mb-2">
+<span class="text-brandCharcoal/50 font-medium uppercase text-xs tracking-widest">Premium Clinical Package</span>
+<span class="text-brandMoss font-bold">$465</span>
+</div>
+<p class="text-brandCharcoal font-semibold text-2xl mb-6">Complete Whole Genome</p>
+<button class="w-full bg-brandCharcoal text-white py-5 rounded-full font-bold hover:bg-brandMoss transition-colors">Order Now</button>
+</div>
+<div class="flex items-center justify-between grayscale opacity-60">
+<span class="text-[10px] font-bold tracking-widest uppercase">CLIA CERTIFIED</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">CAP ACCREDITED</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">GDPR COMPLIANT</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CTA Block -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-brandCharcoal text-white py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-2 md:col-span-1">
+<h4 class="text-xl font-bold tracking-tighter mb-8">DANTE LABS</h4>
+<p class="text-white/40 text-sm leading-relaxed">Personalizing healthcare through the power of whole genome sequencing and advanced medical data.</p>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest mb-6 opacity-30">Products</h5>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Whole Genome</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Rare Diseases</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Health Screening</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Upload DNA Data</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest mb-6 opacity-30">Science</h5>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Our Labs</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Publications</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Security</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Methods</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest mb-6 opacity-30">Contact</h5>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Support</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Partners</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Clinicians</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold uppercase tracking-widest text-white/30">
+<p>© 2024 Dante Labs. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Genetic Data Privacy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
