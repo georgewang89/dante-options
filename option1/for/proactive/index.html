@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Genome, For Life | Dante Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#0a1129",
+                    "background-light": "#f6f6f8",
+                    "background-dark": "#13161f",
+                },
+                fontFamily: {
+                    "display": ["Manrope", "Helvetica", "Arial", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+        },
+    }
+</script>
+<style>
+    body { font-family: 'Manrope', sans-serif; }
+</style>
+</head>
+<body class="bg-background-light text-primary transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col" style="overflow-x: clip;">
+
+<!-- Navigation Bar -->
+<header class="border-b border-primary/10 px-4 md:px-8 lg:px-16 py-6 bg-background-light z-50 sticky top-0">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+<img src="../../assets/logo.png" alt="Dante Labs" class="h-6 w-auto"/>
+<h2 class="text-2xl font-800 tracking-tighter uppercase leading-none">Dante Labs</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-10">
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Who We Help <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Find your situation</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">It runs in my family</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I can't get a diagnosis</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">My treatment isn't working</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I've already tested elsewhere</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I want to know in advance</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Conditions <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Cardiac conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Hereditary cancer</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Neurological conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Rare diseases</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Pharmacogenomics</a>
+<a class="block text-sm font-bold uppercase tracking-widest text-xs pt-4 mt-2 border-t border-primary/10 hover:opacity-60" href="#">Browse all conditions →</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Products <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Our tests</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Whole Genome Sequencing</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">RNA Profile</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Prevention Program</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Oncology</a>
+</div>
+</div>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="#">Our Science</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="#">Outcomes</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="border border-primary/20 px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-primary/5 transition-colors" href="#">Log In</a>
+<a class="bg-primary text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">Get Tested — from $449</a>
+</div>
+</div>
+</header>
+
+<main class="max-w-[1440px] mx-auto w-full">
+
+<!-- HERO -->
+<section class="grid grid-cols-1 lg:grid-cols-12 border-b border-primary/10 px-4 md:px-8 lg:px-16">
+<div class="lg:col-span-7 py-16 lg:py-24 pr-8 border-r border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">PROACTIVE GENOMICS</p>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-800 leading-[0.9] tracking-tighter uppercase mb-12">
+Your Genome. One test. For life.
+</h1>
+<div class="max-w-xl">
+<p class="text-lg md:text-xl font-medium leading-tight mb-12 opacity-80">
+A single 30X whole genome sequence reads every base pair. 4.6 to 5M variants covering hereditary disease risk, medication response, carrier status, and more.
+</p>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-widest flex items-center gap-4 group hover:opacity-90 transition-all" href="#">
+Get my Genome Test — from $449
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+</a>
+<a class="border border-primary/30 px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors" href="#coverage">
+See what's included
+</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative min-h-[400px]">
+<img src="../../assets/hero-couple.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover"/>
+</div>
+</section>
+
+<!-- Certifications Bar -->
+<section class="border-b border-primary/10 px-4 md:px-8 lg:px-16 py-6">
+<div class="flex flex-wrap justify-between items-center gap-x-6 gap-y-3 text-[10px] font-bold uppercase tracking-widest opacity-50">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> CLIA Certified</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> ISO 15189 Medical Lab</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">lock</span> HIPAA &amp; GDPR</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">biotech</span> 30X Coverage</span>
+<span class="opacity-30">|</span>
+<span><strong class="font-800">100,000+</strong> Genomes Sequenced</span>
+</div>
+</section>
+
+<!-- COMPLETE COVERAGE -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10" id="coverage">
+<div class="mb-16 max-w-4xl">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">COMPLETE COVERAGE</p>
+<h2 class="text-5xl font-800 tracking-tighter uppercase mb-8">What you get vs. what consumer tests read.</h2>
+</div>
+
+<!-- Comparison -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border-t border-l border-primary/10 mb-24">
+<div class="border-r border-b border-primary/10 p-12 flex flex-col gap-6">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">CONSUMER DNA TEST</p>
+<p class="text-6xl font-800 tracking-tighter">~0.02%</p>
+<p class="text-lg font-medium opacity-60">of your genome read</p>
+<div class="border-t border-primary/10 pt-6 mt-4">
+<p class="text-3xl font-800 tracking-tighter mb-2">~700K</p>
+<p class="text-sm opacity-60 leading-relaxed">positions scanned. Consumer tests use genotyping chips that read pre-selected markers. They are designed for ancestry and trait estimation, not medical decisions.</p>
+</div>
+</div>
+<div class="border-r border-b border-primary/10 p-12 flex flex-col gap-6 bg-primary text-white">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">DANTE 30X WHOLE GENOME</p>
+<p class="text-6xl font-800 tracking-tighter">100%</p>
+<p class="text-lg font-medium opacity-60">of your genome sequenced</p>
+<div class="border-t border-white/10 pt-6 mt-4">
+<p class="text-3xl font-800 tracking-tighter mb-2">4.6 to 5M</p>
+<p class="text-sm opacity-60 leading-relaxed">variants identified. Every gene, every intergenic region, every base pair. Clinical-grade sequencing at 30X depth, the standard used for diagnostic decisions.</p>
+</div>
+</div>
+</div>
+
+<!-- Report Categories -->
+<div class="mb-8">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-40">WHAT YOUR REPORTS COVER</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">genetics</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Hereditary disease risk</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Identify inherited variants associated with cardiac, cancer, neurological, and metabolic conditions. Know your predispositions before symptoms appear.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">medication</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Pharmacogenomics</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">132 drugs across 14 categories. Know how your body metabolizes medications before your doctor prescribes them, including 46 psychiatric medications.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">family_restroom</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Carrier status</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Understand which genetic conditions you carry that could be passed to your children, even if you show no symptoms yourself.</p>
+</div>
+</div>
+</section>
+
+<!-- PERMANENCE -->
+<section class="bg-primary text-white">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<div class="lg:col-span-5 relative min-h-[500px]">
+<img src="../../assets/walking-2.png" alt="" class="absolute inset-0 w-full h-full object-cover"/>
+</div>
+<div class="lg:col-span-7 py-24 px-8 lg:px-16 lg:pr-24">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">PERMANENCE</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-8 leading-none">Your test becomes more complete over time.</h2>
+<p class="text-lg font-medium opacity-70 leading-relaxed mb-12">
+Your DNA does not change, but genome science is accelerating. Every month, new variant-disease associations are discovered. We validate these findings and update your reports automatically. You test once. Your genome keeps working for you.
+</p>
+<div class="border-y border-white/10 py-8 mb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<p class="text-5xl font-800 tracking-tighter">~22%</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">of patients received a new clinically significant finding within 3 years</p>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-sm opacity-60 leading-relaxed">Source: HudsonAlpha CSER cohort. As science advances, previously unclassified variants are reclassified. Your genome data is automatically re-analyzed against the latest evidence.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GENOME MANAGER -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<div class="mb-16 max-w-4xl">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">GENOME MANAGER</p>
+<h2 class="text-5xl font-800 tracking-tighter uppercase mb-8">More than raw data.</h2>
+<p class="text-xl font-medium opacity-70 max-w-3xl">Your results live in Genome Manager: a secure portal where your genome becomes an active, evolving health resource.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">description</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">200+ reports</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Physician-ready reports organized by category: hereditary disease, pharmacogenomics, carrier status, wellness, and more.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">smart_toy</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">AI interpretation</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Ask questions about your results in plain language. The Genome Manager AI helps you understand what your variants mean.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">group</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Family profiles</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Link family members to identify shared hereditary risks and build a multi-generational genetic picture.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">update</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Dynamic re-analysis</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">As new variant-disease associations are validated, your reports update automatically. No additional testing required.</p>
+</div>
+</div>
+</section>
+
+<!-- DATA PROTECTION -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">DATA PROTECTION</p>
+<h2 class="text-5xl font-800 tracking-tighter uppercase mb-8 leading-none">Your genome. Your data. Your control.</h2>
+<p class="text-lg font-medium opacity-70 leading-relaxed mb-8">
+Your genome is processed in our Italian laboratory under European GDPR governance, not US data frameworks. You maintain full ownership and control of your genetic information.
+</p>
+<!-- Credentials -->
+<div class="flex flex-wrap gap-4 items-center text-[10px] font-bold uppercase tracking-widest opacity-50">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> CLIA</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> ISO 15189</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> NHS-Accepted</span>
+<span class="opacity-30">|</span>
+<span>99.98%</span>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">science</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">ISO 15189 Italian laboratory</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Your sample is processed in an accredited medical laboratory in Italy, operating under the strictest European quality standards.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">shield</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">GDPR governed</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Full European General Data Protection Regulation compliance. Your data rights are protected by the world's strongest privacy framework.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">block</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">No third-party sales</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Your genetic data is never sold, shared, or licensed to third parties. Not for research, not for insurance, not for any reason.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">admin_panel_settings</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Full data control and deletion</h4>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Download, export, or permanently delete your genomic data at any time. You decide what happens to your genetic information.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA BLOCK -->
+<section class="py-24 px-4 md:px-8 lg:px-16 text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-800 tracking-tighter uppercase mb-8 leading-none">The baseline you create today is the reference point every future physician works from.</h2>
+<p class="text-xl font-medium mb-12 opacity-70">
+One test. Your complete genome sequenced at the clinical standard used for diagnostic decisions. 200+ physician-ready reports, updated for life as science advances.
+</p>
+<div class="w-full max-w-2xl mx-auto mb-0">
+<img src="../../assets/kit-box.png" alt="Dante Labs Whole Genome Sequencing Collection Kit" class="w-full object-cover"/>
+</div>
+<div class="bg-primary text-white p-12 mb-12 inline-block w-full max-w-2xl">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+<div class="text-left">
+<p class="text-4xl font-800">From $449</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">Ships within 48 hours. Results in 6 to 8 weeks.</p>
+</div>
+<div class="flex flex-col gap-4 w-full md:w-auto">
+<a class="bg-white text-primary px-8 py-4 text-sm font-bold uppercase tracking-widest hover:invert transition-all text-center" href="#">
+Get my Genome Test →
+</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-60 hover:opacity-100 text-center" href="#">
+Not sure where to start? →
+</a>
+</div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40 border-t border-white/10 pt-8">BNPL / HSA / FSA ELIGIBLE</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-24 px-4 md:px-8 lg:px-16 mt-auto border-t border-white/10">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
+<div class="lg:col-span-3">
+<div class="flex items-center gap-3 mb-8">
+<img src="../../assets/logo-white.png" alt="Dante Labs" class="h-5 w-auto"/>
+<span class="text-lg font-800 tracking-tighter uppercase leading-none">Dante Labs</span>
+</div>
+<p class="text-sm opacity-60 max-w-xs leading-relaxed mb-6">Clinical-grade whole genome sequencing. 30X coverage. 200+ physician-ready reports. The complete genetic picture.</p>
+<a class="text-sm font-bold opacity-60 hover:opacity-100 transition-opacity" href="mailto:hello@dantelabs.com">hello@dantelabs.com</a>
+<div class="flex items-center gap-5 mt-8">
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.93 3.78-3.93 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg></a>
+</div>
+</div>
+<div class="lg:col-span-2 lg:col-start-5">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Navigate</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Whole Genome Sequencing</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Get Tested</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Health Conditions</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Already Tested?</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Company</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">About</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Our Science</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Outcomes</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Oncology</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Support</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Contact Us</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Legal</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Data Protection</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">GDPR</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-12 gap-8">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">&copy; 2026 Dante Labs. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">About</a>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+</body></html>

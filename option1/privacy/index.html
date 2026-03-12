@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Privacy | Dante Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#0a1129",
+                    "background-light": "#f6f6f8",
+                    "background-dark": "#13161f",
+                },
+                fontFamily: {
+                    "display": ["Manrope", "Helvetica", "Arial", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+        },
+    }
+</script>
+<style>
+    body { font-family: 'Manrope', sans-serif; }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col" style="overflow-x: clip;">
+<!-- Navigation Bar -->
+<header class="border-b border-primary/10 px-4 md:px-8 lg:px-16 py-6 bg-background-light dark:bg-background-dark z-50 sticky top-0">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a href="../" class="flex items-center gap-2">
+<img src="../assets/logo.png" alt="Dante Labs" class="h-6 w-auto"/>
+<h2 class="text-2xl font-800 tracking-tighter uppercase leading-none">Dante Labs</h2>
+</a>
+<nav class="hidden lg:flex items-center gap-10">
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Who We Help <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Find your situation</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">It runs in my family</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I can't get a diagnosis</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">My treatment isn't working</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I've already tested elsewhere</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I want to know in advance</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Conditions <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Cardiac conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Hereditary cancer</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Neurological conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Rare diseases</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Pharmacogenomics</a>
+<a class="block text-sm font-bold uppercase tracking-widest text-xs pt-4 mt-2 border-t border-primary/10 hover:opacity-60" href="#">Browse all conditions →</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Products <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Our tests</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Whole Genome Sequencing</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">RNA Profile</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Prevention Program</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Oncology</a>
+</div>
+</div>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="#">Our Science</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="#">Outcomes</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="border border-primary/20 px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-primary/5 transition-colors" href="#">Log In</a>
+<a class="bg-primary text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">Get Tested — from $449</a>
+</div>
+</div>
+</header>
+
+<main class="max-w-[1440px] mx-auto w-full">
+
+<!-- HERO -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">PRIVACY</p>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-800 leading-[0.9] tracking-tighter uppercase mb-12 max-w-5xl">
+Your genome. Your data. Your decision.
+</h1>
+<p class="text-xl font-medium opacity-70 leading-relaxed max-w-3xl">
+Your genetic information is the most personal data that exists. We built our entire infrastructure around that fact. Not as a feature. As a foundation.
+</p>
+</section>
+
+<!-- THREE CORE COMMITMENTS -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">CORE COMMITMENTS</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-16">Three principles. Non-negotiable.</h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">block</span>
+</div>
+<h4 class="text-xl font-800 tracking-tight">We do not sell your data</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Your genetic data is never sold, licensed, or shared with third parties for commercial purposes. Not to pharmaceutical companies. Not to insurers. Not to anyone. This is not a setting you can accidentally leave unchecked. It is how we operate.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">public</span>
+</div>
+<h4 class="text-xl font-800 tracking-tight">GDPR processing in Europe</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">All sequencing and data processing occurs within the European Union, governed by the General Data Protection Regulation. Genetic data is classified as "special category data" under GDPR, receiving the highest level of legal protection available anywhere in the world.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">person</span>
+</div>
+<h4 class="text-xl font-800 tracking-tight">You own your data. You can delete it.</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Your genomic data belongs to you. You can download it, transfer it, or request complete deletion at any time. When you request deletion, we delete it. No retention periods. No hidden copies. No exceptions.</p>
+</div>
+</div>
+</section>
+
+<!-- JURISDICTION -->
+<section class="bg-primary text-white">
+<div class="py-24 px-4 md:px-8 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-6">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-8">JURISDICTION</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-8">Where your data is processed matters.</h2>
+<p class="text-lg font-medium opacity-60 leading-relaxed mb-8">
+Your sample is processed in our ISO 15189 accredited laboratory in Italy. Your data never leaves the European Union unless you explicitly request it. This means your genetic information is governed by GDPR from the moment your sample arrives to the moment you choose to delete it.
+</p>
+<p class="text-sm font-medium opacity-40 leading-relaxed">
+GDPR classifies genetic data as "special category data" under Article 9, requiring explicit consent for processing, purpose limitation, and granting you comprehensive rights over your information that no other jurisdiction provides.
+</p>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-0 border-t border-l border-white/10">
+<div class="border-r border-b border-white/10 p-8 flex items-start gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">location_on</span>
+<div>
+<h4 class="text-base font-800 tracking-tight mb-2">Processing location</h4>
+<p class="text-sm opacity-60">Italy, European Union</p>
+</div>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex items-start gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">gavel</span>
+<div>
+<h4 class="text-base font-800 tracking-tight mb-2">Governing regulation</h4>
+<p class="text-sm opacity-60">GDPR (EU) 2016/679</p>
+</div>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex items-start gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">shield</span>
+<div>
+<h4 class="text-base font-800 tracking-tight mb-2">Data classification</h4>
+<p class="text-sm opacity-60">Special category data (Article 9)</p>
+</div>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex items-start gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">verified</span>
+<div>
+<h4 class="text-base font-800 tracking-tight mb-2">Lab accreditation</h4>
+<p class="text-sm opacity-60">ISO 15189 Medical Laboratory</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DATA USE -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">DATA USE</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-16">What we do and don't do with your data.</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">WHAT DANTE DOES</p>
+<ul class="flex flex-col gap-4">
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5">check</span>
+Sequence your genome in our accredited lab
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5">check</span>
+Generate physician-ready clinical reports
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5">check</span>
+Store your data securely within the EU
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5">check</span>
+Re-analyze your data as science advances
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5">check</span>
+Provide you full access to download your raw data
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5">check</span>
+Delete your data upon request
+</li>
+</ul>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">WHAT DANTE DOES NOT DO</p>
+<ul class="flex flex-col gap-4">
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5 opacity-40">close</span>
+Sell your data to third parties
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5 opacity-40">close</span>
+Share data with pharmaceutical companies
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5 opacity-40">close</span>
+Provide data to insurance companies
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5 opacity-40">close</span>
+Use your data for advertising or marketing
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5 opacity-40">close</span>
+Transfer data outside the EU without consent
+</li>
+<li class="flex items-start gap-3 text-sm font-medium opacity-70">
+<span class="material-symbols-outlined text-sm mt-0.5 opacity-40">close</span>
+Retain data after you request deletion
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- USER RIGHTS -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">YOUR RIGHTS</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-8">You have the right to control your data.</h2>
+<p class="text-sm font-medium opacity-60 leading-relaxed mb-16 max-w-3xl">Under GDPR, you have enforceable rights over your genetic data. These are not optional features. They are legal obligations we are required to fulfill. All requests are processed within 30 days.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">visibility</span>
+<h4 class="text-base font-800 tracking-tight">Right of Access</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Request a complete copy of all personal and genetic data we hold about you.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">delete</span>
+<h4 class="text-base font-800 tracking-tight">Right to Deletion</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Request complete erasure of your data from our systems. Permanent and irreversible.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">swap_horiz</span>
+<h4 class="text-base font-800 tracking-tight">Right to Portability</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Download your data in a standard format and transfer it to another provider.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">front_hand</span>
+<h4 class="text-base font-800 tracking-tight">Right to Object</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Object to specific types of processing. Withdraw consent at any time without affecting service.</p>
+</div>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-8">All requests processed within 30 days</p>
+</section>
+
+<!-- SAFEGUARDS -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">SAFEGUARDS</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-16">Technical and organizational measures.</h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">ISO 15189 Accredited</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Our laboratory meets the international standard for medical laboratory quality and competence. This covers sample handling, analysis, and data management.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">enhanced_encryption</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Encryption at rest and in transit</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">All genomic data is encrypted using AES-256 at rest and TLS 1.3 in transit. Access is restricted through role-based controls with comprehensive audit trails.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">manage_search</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Audit trails</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Every access to your data is logged. We maintain comprehensive audit trails that record who accessed what data and when, ensuring full accountability.</p>
+</div>
+</div>
+</section>
+
+<!-- FULL LEGAL POLICY SUMMARY -->
+<section class="py-24 px-4 md:px-8 lg:px-16">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">LEGAL</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-16">Privacy policy summary.</h2>
+<div class="max-w-3xl">
+<div class="flex flex-col gap-8">
+<div class="border-b border-primary/10 pb-8">
+<h4 class="text-base font-800 tracking-tight mb-3">Data Controller</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Dante Labs S.r.l., with registered office in Italy, acts as the data controller for all personal and genetic data collected through our services.</p>
+</div>
+<div class="border-b border-primary/10 pb-8">
+<h4 class="text-base font-800 tracking-tight mb-3">Legal Basis for Processing</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">We process your genetic data based on your explicit consent (GDPR Article 9(2)(a)). You provide this consent when you order a test and again when you submit your sample. You may withdraw consent at any time.</p>
+</div>
+<div class="border-b border-primary/10 pb-8">
+<h4 class="text-base font-800 tracking-tight mb-3">Data Retention</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Your data is retained for as long as you maintain an active account and wish to access your reports and raw data. Upon account deletion or erasure request, all data is permanently deleted within 30 days.</p>
+</div>
+<div class="border-b border-primary/10 pb-8">
+<h4 class="text-base font-800 tracking-tight mb-3">International Transfers</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">Your genetic data is processed and stored within the European Union. No transfers to third countries occur without your explicit consent and appropriate safeguards under GDPR Chapter V.</p>
+</div>
+<div class="border-b border-primary/10 pb-8">
+<h4 class="text-base font-800 tracking-tight mb-3">Contact</h4>
+<p class="text-sm font-medium opacity-60 leading-relaxed">For privacy inquiries or to exercise your rights, contact our Data Protection Officer at dpo@dantelabs.com.</p>
+</div>
+</div>
+<div class="mt-12 flex flex-wrap gap-4">
+<a class="border border-primary/20 px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors" href="../data-protection/">Data Protection</a>
+<a class="border border-primary/20 px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors" href="../gdpr/">GDPR Details</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-24 px-4 md:px-8 lg:px-16 mt-auto border-t border-white/10">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
+<div class="lg:col-span-3">
+<div class="flex items-center gap-3 mb-8">
+<img src="../assets/logo-white.png" alt="Dante Labs" class="h-5 w-auto"/>
+<span class="text-lg font-800 tracking-tighter uppercase leading-none">Dante Labs</span>
+</div>
+<p class="text-sm opacity-60 max-w-xs leading-relaxed mb-6">Clinical-grade whole genome sequencing. 30X coverage. 200+ physician-ready reports. The complete genetic picture.</p>
+<a class="text-sm font-bold opacity-60 hover:opacity-100 transition-opacity" href="mailto:hello@dantelabs.com">hello@dantelabs.com</a>
+<div class="flex items-center gap-5 mt-8">
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.93 3.78-3.93 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg></a>
+</div>
+</div>
+<div class="lg:col-span-2 lg:col-start-5">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Navigate</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Whole Genome Sequencing</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Get Tested</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Health Conditions</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="../upgrade/">Already Tested?</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Company</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">About</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Our Science</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Outcomes</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Oncology</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Support</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Contact Us</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Legal</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="../privacy/">Privacy Policy</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="../data-protection/">Data Protection</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="../gdpr/">GDPR</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-12 gap-8">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">&copy; 2026 Dante Labs. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="../privacy/">Privacy</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">About</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

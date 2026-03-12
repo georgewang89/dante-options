@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Science — Dante Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#0a1129",
+                    "background-light": "#f6f6f8",
+                    "background-dark": "#13161f",
+                },
+                fontFamily: {
+                    "display": ["Manrope", "Helvetica", "Arial", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+        },
+    }
+</script>
+<style>
+    body { font-family: 'Manrope', sans-serif; }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col" style="overflow-x: clip;">
+
+<!-- Navigation Bar -->
+<header class="border-b border-primary/10 px-4 md:px-8 lg:px-16 py-6 bg-background-light dark:bg-background-dark z-50 sticky top-0">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a href="../" class="flex items-center gap-2">
+<img src="../assets/logo.png" alt="Dante Labs" class="h-6 w-auto"/>
+<h2 class="text-2xl font-800 tracking-tighter uppercase leading-none">Dante Labs</h2>
+</a>
+<nav class="hidden lg:flex items-center gap-10">
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Who We Help <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Find your situation</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">It runs in my family</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I can't get a diagnosis</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">My treatment isn't working</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I've already tested elsewhere</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I want to know in advance</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Conditions <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Cardiac conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Hereditary cancer</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Neurological conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Rare diseases</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Pharmacogenomics</a>
+<a class="block text-sm font-bold uppercase tracking-widest text-xs pt-4 mt-2 border-t border-primary/10 hover:opacity-60" href="#">Browse all conditions →</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Products <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Our tests</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Whole Genome Sequencing</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">RNA Profile</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Prevention Program</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Oncology</a>
+</div>
+</div>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest opacity-100" href="../our-science/">Our Science</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="../outcomes/">Outcomes</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="border border-primary/20 px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-primary/5 transition-colors" href="#">Log In</a>
+<a class="bg-primary text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">Get Tested — from $449</a>
+</div>
+</div>
+</header>
+
+<main class="max-w-[1440px] mx-auto w-full">
+
+<!-- HERO -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">VERIFIABLE CLAIMS</p>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-800 leading-[0.9] tracking-tighter uppercase mb-12">Our Science</h1>
+<div class="max-w-3xl">
+<p class="text-lg font-700 mb-4 opacity-80">Clinical-grade science. Verifiable credentials.</p>
+<p class="text-lg font-medium leading-relaxed opacity-70">Every claim on this page is backed by a named accreditation body, a documented clinical outcome, or a verifiable production figure.</p>
+</div>
+</section>
+
+<!-- CREDENTIALS STRIP -->
+<section class="border-b border-primary/10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<h4 class="text-base font-800 tracking-tight uppercase">CLIA Certified</h4>
+<p class="text-sm opacity-60 leading-relaxed">Results usable in US medical decision-making. Required for any laboratory performing clinical testing on human specimens.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<h4 class="text-base font-800 tracking-tight uppercase">ISO 15189 Accredited</h4>
+<p class="text-sm opacity-60 leading-relaxed">International medical laboratory standard. The global benchmark for clinical laboratory quality and competence.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">analytics</span>
+</div>
+<h4 class="text-base font-800 tracking-tight uppercase">99.98% Accuracy</h4>
+<p class="text-sm opacity-60 leading-relaxed">Across 80,000+ samples. Production figure, not a theoretical benchmark.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">local_hospital</span>
+</div>
+<h4 class="text-base font-800 tracking-tight uppercase">NHS-Accepted Results</h4>
+<p class="text-sm opacity-60 leading-relaxed">Queen Elizabeth University Hospital Glasgow. Dante results accepted by NHS clinical genetics for diagnostic decisions.</p>
+</div>
+</div>
+</section>
+
+<!-- THE LABORATORY -->
+<section class="grid grid-cols-1 lg:grid-cols-12 border-b border-primary/10">
+<div class="lg:col-span-7 py-16 lg:py-24 px-4 md:px-8 lg:px-16 border-r border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-40">THE LABORATORY</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-8 leading-none">Where your genome is processed. And why it matters.</h2>
+<p class="text-base font-medium opacity-70 leading-relaxed mb-6">Your sample is processed in our ISO 15189 accredited laboratory in Italy, operating under EU data jurisdiction and full GDPR compliance. This is not a marketing label. It determines where your biological material is stored, who has access to your data, and what legal protections apply.</p>
+<p class="text-base font-medium opacity-70 leading-relaxed mb-6">Every genome is sequenced at 30X coverage, the clinical standard used for diagnostic-grade decisions. This means every position in your DNA is read an average of 30 times, ensuring the accuracy required for physician-level reporting.</p>
+<div class="grid grid-cols-3 gap-0 border-t border-l border-primary/10 mt-12">
+<div class="border-r border-b border-primary/10 p-6">
+<p class="text-3xl font-800">30X</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">coverage depth</p>
+</div>
+<div class="border-r border-b border-primary/10 p-6">
+<p class="text-3xl font-800">ISO 15189</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">medical lab standard</p>
+</div>
+<div class="border-r border-b border-primary/10 p-6">
+<p class="text-3xl font-800">GDPR</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">EU data protection</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative min-h-[500px]">
+<img src="../assets/hallway.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover"/>
+</div>
+</section>
+
+<!-- SCALE STATS -->
+<section class="bg-primary text-white py-24 px-4 md:px-8 lg:px-16">
+<div class="max-w-[1440px] mx-auto">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">PRODUCTION SCALE</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-16 leading-none">Scale of Operations</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-t border-l border-white/10">
+<div class="border-r border-b border-white/10 p-8">
+<p class="text-4xl lg:text-5xl font-800">1.3M+</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">clinical reports delivered</p>
+</div>
+<div class="border-r border-b border-white/10 p-8">
+<p class="text-4xl lg:text-5xl font-800">100K+</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">genomes sequenced</p>
+</div>
+<div class="border-r border-b border-white/10 p-8">
+<p class="text-4xl lg:text-5xl font-800">200+</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">reports per genome</p>
+</div>
+<div class="border-r border-b border-white/10 p-8">
+<p class="text-4xl lg:text-5xl font-800">100+</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">countries served</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SCIENTIFIC RECOGNITION -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">RECOGNITION</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-16 leading-none">Scientific Recognition</h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">PEER-REVIEWED</p>
+<h4 class="text-2xl font-800 tracking-tighter leading-none">Published in Nature</h4>
+<p class="text-sm opacity-60 leading-relaxed">Dante Labs research has been published in Nature, the world's leading multidisciplinary science journal. Peer-reviewed validation of our sequencing methodology and clinical findings.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">podium</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">CONFERENCE</p>
+<h4 class="text-2xl font-800 tracking-tighter leading-none">ASHG Presentation</h4>
+<p class="text-sm opacity-60 leading-relaxed">Presented at the American Society of Human Genetics annual meeting. ASHG is the primary professional membership organization for human genetics specialists worldwide.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-10 flex flex-col gap-6 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">trending_up</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">CLINICAL DEMAND</p>
+<h4 class="text-2xl font-800 tracking-tighter leading-none">Inbound Clinical Demand</h4>
+<p class="text-sm opacity-60 leading-relaxed">Healthcare providers across 100+ countries order Dante WGS for their patients. Clinical teams use our reports for diagnostic decisions, treatment planning, and cascade testing.</p>
+</div>
+</div>
+</section>
+
+<!-- THE GENOME MANAGER -->
+<section class="grid grid-cols-1 lg:grid-cols-12 border-b border-primary/10">
+<div class="lg:col-span-7 py-16 lg:py-24 px-4 md:px-8 lg:px-16 border-r border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-40">YOUR PORTAL</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-8 leading-none">The Genome Manager. From sequencing to clinical action.</h2>
+<p class="text-base font-medium opacity-70 leading-relaxed mb-6">Your results are delivered through the Genome Manager: a secure portal containing 200+ ACMG-classified reports organized by clinical category. Each report is generated using AI-assisted interpretation, cross-referenced against current medical literature and variant databases.</p>
+<p class="text-base font-medium opacity-70 leading-relaxed mb-6">The Genome Manager supports family profiles, allowing hereditary findings to be contextualized across relatives. Reports are not static. As new variant-disease associations are validated, your reports update automatically through dynamic re-analysis.</p>
+<div class="border border-primary/10 p-8 mt-8 bg-primary/5">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-2xl">update</span>
+<p class="text-base font-800 tracking-tight">Dynamic re-analysis</p>
+</div>
+<p class="text-sm opacity-60 leading-relaxed">Approximately 22% of cases initially classified as negative receive new clinically significant findings within 3 years, as science discovers new variant-disease associations and your reports are automatically updated.</p>
+</div>
+</div>
+<div class="lg:col-span-5 py-16 lg:py-24 px-8 lg:px-12">
+<div class="flex flex-col gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">description</span>
+<div>
+<p class="text-sm font-800">200+ Reports</p>
+<p class="text-xs opacity-50">ACMG-classified, physician-ready</p>
+</div>
+</div>
+<div class="border-r border-b border-primary/10 p-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">psychology</span>
+<div>
+<p class="text-sm font-800">AI Interpretation</p>
+<p class="text-xs opacity-50">Cross-referenced against medical literature</p>
+</div>
+</div>
+<div class="border-r border-b border-primary/10 p-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">family_restroom</span>
+<div>
+<p class="text-sm font-800">Family Profiles</p>
+<p class="text-xs opacity-50">Hereditary context across relatives</p>
+</div>
+</div>
+<div class="border-r border-b border-primary/10 p-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">update</span>
+<div>
+<p class="text-sm font-800">Dynamic Re-analysis</p>
+<p class="text-xs opacity-50">Reports update as science advances</p>
+</div>
+</div>
+<div class="border-r border-b border-primary/10 p-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-xl opacity-40">analytics</span>
+<div>
+<p class="text-sm font-800">~22% New Findings</p>
+<p class="text-xs opacity-50">Within 3 years of initial analysis</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DATA & PRIVACY -->
+<section class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-6">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-40">DATA GOVERNANCE</p>
+<h2 class="text-4xl lg:text-5xl font-800 tracking-tighter uppercase mb-8 leading-none">Your data. Your control.</h2>
+<p class="text-base font-medium opacity-70 leading-relaxed mb-6">Your biological sample is processed in our Italian laboratory, under EU data jurisdiction. Full GDPR compliance is not optional. It is the legal framework that governs how your data is collected, stored, and used.</p>
+<p class="text-base font-medium opacity-70 leading-relaxed">Dante Labs has never sold genomic data. Your data is never used for advertising purposes. You retain full control over your genomic information, including the right to request deletion at any time.</p>
+</div>
+<div class="lg:col-span-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-l border-primary/10">
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4">
+<span class="material-symbols-outlined text-2xl opacity-40">location_on</span>
+<p class="text-sm font-800">Italian Laboratory</p>
+<p class="text-xs opacity-50">EU jurisdiction, EU data protection law</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4">
+<span class="material-symbols-outlined text-2xl opacity-40">shield</span>
+<p class="text-sm font-800">GDPR Compliant</p>
+<p class="text-xs opacity-50">Full compliance, not partial</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4">
+<span class="material-symbols-outlined text-2xl opacity-40">block</span>
+<p class="text-sm font-800">Never Sold</p>
+<p class="text-xs opacity-50">Your data has never been sold to third parties</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4">
+<span class="material-symbols-outlined text-2xl opacity-40">visibility_off</span>
+<p class="text-sm font-800">No Advertising Use</p>
+<p class="text-xs opacity-50">Your genomic data is never used for ads</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 px-4 md:px-8 lg:px-16 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-5xl md:text-6xl font-800 tracking-tighter uppercase mb-8">Clinical-grade genomics. Accessible to everyone.</h2>
+<p class="text-xl font-medium mb-12 opacity-70">One test. Your entire genome sequenced at the clinical standard used for diagnostic decisions. 200+ physician-ready reports. Updated for life.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-opacity" href="#">See what's included in your Genome test — $599</a>
+<a class="border border-primary/20 px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-primary/5 transition-colors" href="../outcomes/">Read clinical outcomes</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-24 px-4 md:px-8 lg:px-16 mt-auto border-t border-white/10">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
+<div class="lg:col-span-3">
+<div class="flex items-center gap-3 mb-8">
+<img src="../assets/logo-white.png" alt="Dante Labs" class="h-5 w-auto"/>
+<span class="text-lg font-800 tracking-tighter uppercase leading-none">Dante Labs</span>
+</div>
+<p class="text-sm opacity-60 max-w-xs leading-relaxed mb-6">Clinical-grade whole genome sequencing. 30X coverage. 200+ physician-ready reports. The complete genetic picture.</p>
+<a class="text-sm font-bold opacity-60 hover:opacity-100 transition-opacity" href="mailto:hello@dantelabs.com">hello@dantelabs.com</a>
+<div class="flex items-center gap-5 mt-8">
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.93 3.78-3.93 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg></a>
+</div>
+</div>
+<div class="lg:col-span-2 lg:col-start-5">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Navigate</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Whole Genome Sequencing</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Get Tested</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Health Conditions</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Already Tested?</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Company</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">About</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="../our-science/">Our Science</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="../outcomes/">Outcomes</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Oncology</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Support</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Contact Us</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Legal</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Data Protection</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">GDPR</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-12 gap-8">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">&copy; 2026 Dante Labs. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">About</a>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+</body></html>

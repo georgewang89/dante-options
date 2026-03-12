@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oncology | Dante Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a1129",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#13161f",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "Helvetica", "Arial", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-background-light text-primary transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col" style="overflow-x: clip;">
+
+<!-- Navigation Bar -->
+<header class="border-b border-primary/10 px-4 md:px-8 lg:px-16 py-6 bg-background-light z-50 sticky top-0">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a href="../" class="flex items-center gap-2">
+<img src="../assets/logo.png" alt="Dante Labs" class="h-6 w-auto"/>
+<h2 class="text-2xl font-800 tracking-tighter uppercase leading-none">Dante Labs</h2>
+</a>
+<nav class="hidden lg:flex items-center gap-10">
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Who We Help <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Find your situation</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">It runs in my family</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I can't get a diagnosis</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">My treatment isn't working</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I've already tested elsewhere</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">I want to know in advance</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Conditions <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Cardiac conditions</a>
+<a class="block text-sm font-medium py-2 opacity-100 border-l-2 border-primary pl-3" href="#">Hereditary cancer</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Neurological conditions</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Rare diseases</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Pharmacogenomics</a>
+<a class="block text-sm font-bold uppercase tracking-widest text-xs pt-4 mt-2 border-t border-primary/10 hover:opacity-60" href="#">Browse all conditions →</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60 flex items-center gap-1 cursor-pointer" href="#">Products <span class="material-symbols-outlined text-sm">expand_more</span></a>
+<div class="absolute top-full left-0 pt-4 hidden group-hover:block z-50">
+<div class="bg-white border border-primary/10 shadow-lg p-6 min-w-[240px]">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-4">Our tests</p>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Whole Genome Sequencing</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="../rna/">RNA Profile</a>
+<a class="block text-sm font-medium py-2 hover:opacity-60" href="#">Prevention Program</a>
+<a class="block text-sm font-medium py-2 opacity-100 border-l-2 border-primary pl-3" href="#">Oncology</a>
+</div>
+</div>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="#">Our Science</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-60" href="#">Outcomes</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="border border-primary/20 px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-primary/5 transition-colors" href="#">Log In</a>
+<a class="bg-primary text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#contact">Start a Conversation</a>
+</div>
+</div>
+</header>
+
+<main class="max-w-[1440px] mx-auto w-full">
+
+<!-- HERO -->
+<section class="py-16 lg:py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-60">ONCOLOGY</p>
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-800 leading-[0.9] tracking-tighter uppercase mb-12 max-w-5xl">
+Hereditary cancer risk. Cancer genetics for diagnosed patients.
+</h1>
+<p class="text-xl max-w-3xl font-medium mb-12 opacity-70">
+Two pathways. For those with a family history of cancer, and for patients already diagnosed who need a complete genetic picture of their disease.
+</p>
+</section>
+
+<!-- Certifications Bar -->
+<section class="border-b border-primary/10 px-4 md:px-8 lg:px-16 py-6">
+<div class="flex flex-wrap justify-start items-center gap-x-6 gap-y-3 text-[10px] font-bold uppercase tracking-widest opacity-50">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> CLIA Certified</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> NHS-Accepted</span>
+<span class="opacity-30">|</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">lock</span> GDPR Compliant</span>
+</div>
+</section>
+
+<!-- DUAL CTA -->
+<section class="border-b border-primary/10 px-4 md:px-8 lg:px-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-l border-primary/10">
+<a href="#hereditary" class="border-r border-b border-primary/10 p-12 flex flex-col gap-6 hover:bg-primary/5 transition-colors group cursor-pointer">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">family_restroom</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">PATHWAY 1</p>
+<h3 class="text-2xl font-800 tracking-tighter leading-none">"My family has a history..."</h3>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Hereditary cancer risk assessment. For people with a family history of cancer who want to know their genetic risk before a diagnosis.</p>
+<span class="text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+Learn more <span class="material-symbols-outlined text-sm">arrow_downward</span>
+</span>
+</a>
+<a href="#oncology-genetics" class="border-r border-b border-primary/10 p-12 flex flex-col gap-6 hover:bg-primary/5 transition-colors group cursor-pointer">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">monitor_heart</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">PATHWAY 2</p>
+<h3 class="text-2xl font-800 tracking-tighter leading-none">"I have been diagnosed..."</h3>
+<p class="text-sm font-medium opacity-70 leading-relaxed">Oncology genetics for diagnosed patients. Germline and somatic analysis to identify the genetic subtype of your cancer and inform treatment.</p>
+<span class="text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+Learn more <span class="material-symbols-outlined text-sm">arrow_downward</span>
+</span>
+</a>
+</div>
+</section>
+
+<!-- HEREDITARY CANCER RISK SECTION -->
+<section id="hereditary" class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<div class="mb-16">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">HEREDITARY CANCER RISK</p>
+<h2 class="text-5xl font-800 tracking-tighter uppercase mb-8">Your family history is genetic information.</h2>
+<p class="text-xl max-w-3xl font-medium opacity-70">
+If cancer runs in your family, it may be driven by inherited variants that a standard test would miss. Dante sequences your entire genome to identify hereditary cancer risk across thousands of known variants.
+</p>
+</div>
+
+<!-- Key markers -->
+<div class="bg-primary text-white p-12 mb-16">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+<div>
+<p class="text-4xl font-800">4,000+</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">BRCA variants analyzed</p>
+</div>
+<div>
+<p class="text-4xl font-800">Lynch</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">Syndrome markers included</p>
+</div>
+<div>
+<p class="text-4xl font-800">6</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40 mt-2">Major gene panels covered</p>
+</div>
+</div>
+<p class="text-sm opacity-60 leading-relaxed">CHEK2, PALB2, ATM, and additional high-penetrance genes included in every whole genome analysis.</p>
+</div>
+
+<!-- 6 Condition Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-primary/10 mb-16">
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">genetics</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">BRCA1 / BRCA2</h4>
+<p class="text-sm opacity-60 leading-relaxed">High-penetrance variants associated with breast, ovarian, prostate, and pancreatic cancer. 4,000+ BRCA variants analyzed across the full gene sequence.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">hub</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Lynch Syndrome</h4>
+<p class="text-sm opacity-60 leading-relaxed">MLH1, MSH2, MSH6, PMS2. Hereditary condition linked to colorectal, endometrial, ovarian, and gastric cancers. Often undiagnosed until cancer presents.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">shield</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">CHEK2</h4>
+<p class="text-sm opacity-60 leading-relaxed">Moderate-penetrance gene associated with breast cancer, colorectal cancer, and prostate cancer risk. Frequently missed by targeted panels.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">link</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">PALB2</h4>
+<p class="text-sm opacity-60 leading-relaxed">Partner and localizer of BRCA2. Associated with elevated breast and pancreatic cancer risk. Increasingly recognized as clinically actionable.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">radar</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">ATM</h4>
+<p class="text-sm opacity-60 leading-relaxed">DNA damage repair gene. Variants associated with breast, pancreatic, and prostate cancer risk. Important for targeted therapy eligibility.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-4 hover:bg-primary/5 transition-colors">
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">warning</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Li-Fraumeni Syndrome</h4>
+<p class="text-sm opacity-60 leading-relaxed">TP53 mutations. Rare but high-penetrance. Associated with sarcomas, breast cancer, brain tumors, and adrenocortical carcinoma. Early surveillance is critical.</p>
+</div>
+</div>
+
+<!-- Hereditary Process -->
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-40">THE PROCESS</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-primary/10 mb-8">
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-6">
+<span class="text-sm font-light opacity-30">01</span>
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">clinical_notes</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Clinical review</h4>
+<p class="text-sm opacity-60 leading-relaxed">Your family history and clinical context are reviewed to determine the appropriate test pathway.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-6">
+<span class="text-sm font-light opacity-30">02</span>
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">route</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Test pathway</h4>
+<p class="text-sm opacity-60 leading-relaxed">Based on your situation, you are directed to the right scope of analysis: targeted panel or whole genome.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-6">
+<span class="text-sm font-light opacity-30">03</span>
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">local_shipping</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Kit dispatched</h4>
+<p class="text-sm opacity-60 leading-relaxed">Your collection kit ships within 48 hours. Simple saliva collection at home. Prepaid return.</p>
+</div>
+<div class="border-r border-b border-primary/10 p-8 flex flex-col gap-6">
+<span class="text-sm font-light opacity-30">04</span>
+<div class="w-12 h-12 bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">assignment_turned_in</span>
+</div>
+<h4 class="text-base font-800 tracking-tight">Results</h4>
+<p class="text-sm opacity-60 leading-relaxed">Physician-ready reports delivered to your Genome Manager. Variants classified per ACMG guidelines.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-widest flex items-center gap-4 group hover:opacity-90 transition-all" href="#">
+Order Genome online — $465
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+</a>
+<a class="text-xs font-bold uppercase tracking-widest opacity-60 hover:opacity-100 transition-opacity" href="#contact">Or start with a conversation →</a>
+</div>
+</section>
+
+<!-- ONCOLOGY GENETICS SECTION -->
+<section id="oncology-genetics" class="bg-primary text-white">
+<div class="py-24 px-4 md:px-8 lg:px-16 max-w-[1440px] mx-auto">
+<div class="mb-16">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">ONCOLOGY GENETICS</p>
+<h2 class="text-5xl font-800 tracking-tighter uppercase mb-8">Your diagnosis may be correct. The genetic subtype may be incomplete.</h2>
+<p class="text-xl max-w-3xl font-medium opacity-60">
+For patients already diagnosed with cancer. Germline whole genome sequencing combined with somatic analysis to identify the genetic subtype of your cancer, inform treatment decisions, and identify inherited risk for family members.
+</p>
+</div>
+
+<!-- Capabilities -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-l border-white/10 mb-16">
+<div class="border-r border-b border-white/10 p-10 flex flex-col gap-6">
+<div class="w-12 h-12 border border-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">hub</span>
+</div>
+<h4 class="text-lg font-800 tracking-tight">Germline WGS</h4>
+<p class="text-sm opacity-60 leading-relaxed">Your inherited genome sequenced at 30X coverage. Identifies germline variants that may have contributed to cancer development and informs risk for biological relatives.</p>
+</div>
+<div class="border-r border-b border-white/10 p-10 flex flex-col gap-6">
+<div class="w-12 h-12 border border-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">biotech</span>
+</div>
+<h4 class="text-lg font-800 tracking-tight">Somatic Analysis</h4>
+<p class="text-sm opacity-60 leading-relaxed">Tumor-specific mutations analyzed alongside your germline genome. Identifies actionable variants, therapy targets, and resistance mechanisms specific to your cancer.</p>
+</div>
+</div>
+
+<!-- 6 Cancer Types -->
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-8 opacity-40">CANCER TYPES WE ANALYZE</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-white/10">
+<div class="border-r border-b border-white/10 p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">pulmonology</span>
+<h4 class="text-base font-800 tracking-tight">Lung Cancer</h4>
+<p class="text-sm opacity-50 leading-relaxed">EGFR, ALK, ROS1, KRAS, BRAF, and MET variants. Therapy selection depends on the molecular subtype.</p>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">female</span>
+<h4 class="text-base font-800 tracking-tight">Breast Cancer</h4>
+<p class="text-sm opacity-50 leading-relaxed">BRCA1/2, HER2, PIK3CA, ESR1. Germline and somatic variants that determine treatment pathway and prognosis.</p>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">genetics</span>
+<h4 class="text-base font-800 tracking-tight">Ovarian Cancer</h4>
+<p class="text-sm opacity-50 leading-relaxed">BRCA1/2, RAD51, PALB2. PARP inhibitor eligibility often depends on germline variant identification.</p>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">gastroenterology</span>
+<h4 class="text-base font-800 tracking-tight">Colorectal Cancer</h4>
+<p class="text-sm opacity-50 leading-relaxed">Lynch Syndrome genes, APC, KRAS, BRAF, MSI status. Informs immunotherapy eligibility and surveillance for relatives.</p>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">gynecology</span>
+<h4 class="text-base font-800 tracking-tight">Endometrial Cancer</h4>
+<p class="text-sm opacity-50 leading-relaxed">Lynch Syndrome association, POLE, PTEN, PIK3CA. Molecular classification determines adjuvant therapy approach.</p>
+</div>
+<div class="border-r border-b border-white/10 p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-xl opacity-40">labs</span>
+<h4 class="text-base font-800 tracking-tight">Pancreatic Cancer</h4>
+<p class="text-sm opacity-50 leading-relaxed">BRCA2, PALB2, ATM, KRAS. Germline testing informs platinum sensitivity and PARP inhibitor eligibility.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CLINICAL ACCEPTANCE -->
+<section class="grid grid-cols-1 lg:grid-cols-12 border-b border-primary/10">
+<div class="lg:col-span-6 p-12 lg:p-24 border-r border-primary/10 bg-primary text-white">
+<span class="material-symbols-outlined text-6xl mb-12 opacity-40">format_quote</span>
+<h2 class="text-3xl lg:text-4xl font-800 tracking-tighter uppercase mb-12 leading-tight">"They never added the numbers up until now when they saw the Dante Labs report."</h2>
+<p class="text-sm opacity-60 leading-relaxed mb-12">Thomas spent years with a set of symptoms no specialist had been able to connect. It wasn't until he received his Dante Labs Whole Genome report that the underlying genetic cause was finally identified. The NHS accepted the result and changed his care plan.</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold tracking-wide">TS</div>
+<div>
+<p class="font-bold">Thomas, Scotland</p>
+<p class="text-xs uppercase tracking-widest opacity-40">Queen Elizabeth University Hospital Glasgow, NHS</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative overflow-hidden min-h-[500px] group cursor-pointer">
+<img src="../assets/hallway.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"></div>
+<div class="absolute bottom-0 left-0 right-0 p-10 lg:p-14 text-white translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+<p class="text-sm font-medium leading-relaxed mb-4 opacity-90">
+Dante Labs results are used by physicians and hospital systems worldwide, including NHS facilities in the UK. Our reports are structured for clinical review and classified per ACMG guidelines.
+</p>
+<p class="text-xs font-bold uppercase tracking-widest opacity-70">
+The genome confirms what you suspected. Or it finds something your doctors weren't looking for.
+</p>
+</div>
+<div class="absolute bottom-6 right-6 w-10 h-10 bg-white/90 flex items-center justify-center transition-all duration-500 group-hover:opacity-0 z-10">
+<span class="material-symbols-outlined text-primary text-lg">arrow_outward</span>
+</div>
+</div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section id="contact" class="py-24 px-4 md:px-8 lg:px-16 border-b border-primary/10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5">
+<p class="text-xs font-bold uppercase tracking-[0.4em] mb-4 opacity-40">GET IN TOUCH</p>
+<h2 class="text-5xl font-800 tracking-tighter uppercase mb-8">Start with a conversation.</h2>
+<p class="text-lg font-medium opacity-70 mb-12 leading-relaxed">
+Whether you have a family history of cancer or have been diagnosed, we can help determine the right test pathway. No commitment required.
+</p>
+<div class="flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-bold uppercase tracking-widest opacity-40">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">verified</span> CLIA Certified</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">lock</span> GDPR Compliant</span>
+</div>
+</div>
+<div class="lg:col-span-6 lg:col-start-7">
+<form class="flex flex-col gap-6">
+<div>
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-40 block mb-3">Name</label>
+<input type="text" class="w-full border border-primary/20 bg-transparent px-6 py-4 text-sm font-medium focus:border-primary focus:outline-none transition-colors" placeholder="Your full name"/>
+</div>
+<div>
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-40 block mb-3">Email</label>
+<input type="email" class="w-full border border-primary/20 bg-transparent px-6 py-4 text-sm font-medium focus:border-primary focus:outline-none transition-colors" placeholder="you@email.com"/>
+</div>
+<div>
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-40 block mb-3">Situation <span class="opacity-60">(optional)</span></label>
+<textarea rows="5" class="w-full border border-primary/20 bg-transparent px-6 py-4 text-sm font-medium focus:border-primary focus:outline-none transition-colors resize-none" placeholder="Tell us about your situation. Family history, current diagnosis, what you are looking for."></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity flex items-center gap-4 group w-fit">
+Send message
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+</button>
+<p class="text-xs font-medium opacity-40">We typically respond within one business day. Your information is protected under GDPR and HIPAA.</p>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-24 px-4 md:px-8 lg:px-16 mt-auto border-t border-white/10">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
+<div class="lg:col-span-3">
+<div class="flex items-center gap-3 mb-8">
+<img src="../assets/logo-white.png" alt="Dante Labs" class="h-5 w-auto"/>
+<span class="text-lg font-800 tracking-tighter uppercase leading-none">Dante Labs</span>
+</div>
+<p class="text-sm opacity-60 max-w-xs leading-relaxed mb-6">Clinical-grade whole genome sequencing. 30X coverage. 200+ physician-ready reports. The complete genetic picture.</p>
+<a class="text-sm font-bold opacity-60 hover:opacity-100 transition-opacity" href="mailto:hello@dantelabs.com">hello@dantelabs.com</a>
+<div class="flex items-center gap-5 mt-8">
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+<a href="#" class="opacity-40 hover:opacity-100 transition-opacity"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.93 3.78-3.93 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg></a>
+</div>
+</div>
+<div class="lg:col-span-2 lg:col-start-5">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Navigate</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Whole Genome Sequencing</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Get Tested</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Health Conditions</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Already Tested?</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Company</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">About</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Our Science</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Outcomes</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Oncology</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Support</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Contact Us</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h4 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-40">Legal</h4>
+<ul class="flex flex-col gap-4 text-sm font-bold tracking-tighter">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Data Protection</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity" href="#">GDPR</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-12 gap-8">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">&copy; 2026 Dante Labs. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">About</a>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+</body></html>
